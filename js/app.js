@@ -5,17 +5,17 @@ var swiper = new Swiper('.swiper-container', {
     },effect: "cube",
 });
 
-// $(function() {
+$(function() {
 
-//     海賊団設定にチェックされたらボタン表示
-//    $('#button').attr('disabled', 'disabled');
+    海賊団設定にチェックされたらボタン表示
+   $('#button').attr('disabled', 'disabled');
 
-//    $('.selectBtn').on('click', function() {
-//        if ($(this).prop('checked') == false ) {
-//         $('#button').attr('disabled', 'disabled');
-//        } else {
-//            $('#button').removeAttr('disabled');
-//        }
-//    })
-// });
+   $('.selectBtn').on('click', function() {
+       if ($(this).prop('checked') == false ) {
+        $('#button').attr('disabled', 'disabled');
+       } else {
+           $('#button').removeAttr('disabled');
+       }
+   })
+});
 
