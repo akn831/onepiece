@@ -63,7 +63,7 @@
     <title>complete</title>
 </head>
 <body class="body">
-    <img class="wanted" src="img/wanted.png" alt="">
+    <img class="wanted" src="img/aaa.png" alt="">
     <?php foreach($records as $record): ?>
         <img class="photo" src="data:image/png;base64,<?= base64_encode($record['image']); ?>">
     <?php endforeach; ?>

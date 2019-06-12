@@ -1,7 +1,3 @@
-<!-- <?php
-    $name = htmlspecialchars($_POST['name']);
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +14,19 @@
         <div class="detail">
             <div class="sub-menu">
                 <p>名前：</p>
-                <input type="text" placeholder="LUFFY" name="name">
+                <input type="text" placeholder="LUFFY" name="name" required>
             </div>
             <div class="sub-menu">
                 <p>懸賞金：</p>
-                <input type="text" placeholder="20,000,000-" name="reward">
+                <input type="text" placeholder="20,000,000-" name="reward" required>
             </div>
             <div class="pic">
                 <p>写真：</p>
                 <input type="file" name="image">
             </div>
-            <input type="submit" value="手配書発行">
+            <input id="btn" type="submit" value="手配書発行">
         </div>
     </form>
+    <script src="./js/app.js"></script>
 </body>
 </html>

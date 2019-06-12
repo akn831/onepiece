@@ -12,6 +12,7 @@
 .center h1 {
     font-size: 100px;
     color: white;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .swiper-container {
@@ -39,7 +40,7 @@
     width: 250px;
 }
 
-.button{
+#button{
     width: 300px;
     height: 50px;
     margin: 30px;
@@ -49,10 +50,12 @@
 .body{
     text-align: center;
     background-color: wheat;
+    height: 100vh;
 }
 
 .wanted{
     position: relative;
+    margin-top: 30px;
 }
 
 .detail{

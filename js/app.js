@@ -7,15 +7,28 @@ var swiper = new Swiper('.swiper-container', {
 
 $(function() {
 
-    海賊団設定にチェックされたらボタン表示
-   $('#button').attr('disabled', 'disabled');
+    // 海賊団設定にチェックされたらボタン表示
+   $('#button').prop('disabled', true);
 
    $('.selectBtn').on('click', function() {
        if ($(this).prop('checked') == false ) {
-        $('#button').attr('disabled', 'disabled');
+        $('#button').prop('disabled', true);
        } else {
-           $('#button').removeAttr('disabled');
+           $('#button').prop('disabled', false);
        }
    })
 });
+
+$(function () {
+    
+    $("#btn").on("click", function() {
+        let name = $(".name").val;
+        let reward = $(".reward").val;
+        let file = $(".file");
+
+        if (name == "") {
+            alert();
+        }
+    })
+})
 
